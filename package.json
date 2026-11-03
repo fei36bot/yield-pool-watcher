@@ -1,0 +1,28 @@
+{
+  "name": "yield-pool-watcher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Track APY and TVL across pools and alert on sharp changes (daydreamsai agent-bounties #6)",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "tsx src/server.ts",
+    "test": "node --test test/*.test.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@lucid-dreams/agent-kit": "^0.2.24",
+    "hono": "^4.6.0",
+    "tsx": "^4.23.15",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
